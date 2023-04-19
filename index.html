@@ -1472,14 +1472,12 @@
 
                         <!-- Single Widget -->
                         <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-widget widget-newsletter">
+                        <div class="single-widget widget-newsletter">
                                 <h6 class="widget-title">Join Our Newsletter</h6>
-                                <p>Get Business news, tip and solutions to
-                                    your problems from our experts.</p>
-                                <form id="tm-mailchimp-form" class="widget-newsletter-form">
-                                    <input id="mc-email" type="text" placeholder="Enter email address">
-                                    <button id="mc-submit" type="submit" class="tm-button">Subscribe Now
-                                        <b></b></button>
+                                <p>Get Business news, tip and solutions to your problems from our experts.</p>
+                             <form id="tm-mailchimp-form" class="widget-newsletter-form" method="POST" action="process_form.php">
+                             <input id="mc-email" type="email" name="mc-email" placeholder="Enter email address">
+                             <button id="mc-submit" type="submit" class="tm-button">Subscribe Now <b></b></button>
                                 </form>
                                 <!-- Mailchimp Alerts -->
                                 <div class="tm-mailchimp-alerts">
